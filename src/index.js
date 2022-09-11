@@ -130,7 +130,7 @@ var lightbox = new SimpleLightbox('.gallery a', {
 
 window.addEventListener('scroll', () => {
   const documentRect = document.documentElement.getBoundingClientRect();
-  if (documentRect.bottom < document.documentElement.clientHeight + 10) {
+  if (documentRect.bottom < document.documentElement.clientHeight + 5) {
     loadMore();
   }
 });
